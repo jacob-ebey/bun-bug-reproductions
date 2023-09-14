@@ -35,5 +35,10 @@ try {
   b();
 } catch (error) {
   console.log(error);
+
+  console.log(
+    "Check ./bugs/bundler-double-exports/dist/entry-a.js file for the issue."
+  );
+  console.log("It seems to arise when re-exporting from another entrypoint.");
   process.exit(1);
 }

@@ -30,12 +30,11 @@ for (const dir of dirs) {
 
   const exitCode = await test.exited.catch(() => "unknown");
   if (exitCode === 0) {
-    // do the above log with the `PASSED` in green
     console.log(`- \x1b[32mPASSED\x1b[0m ${dir.name}`);
   } else {
     failed = true;
     console.log(
-      `- \x1b[31mFAILED\x1b[0m ${dir.name}:\n${testOutput
+      `- \x1b[31mFAILED\x1b[0m ${dir.name}\n${testOutput
         .split("\n")
         .map((line) => `  ${line}`)
         .join("\n")}${"-".repeat(80)}`
