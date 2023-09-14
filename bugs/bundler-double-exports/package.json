@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "bundler-double-exports",
+  "scripts": {
+    "start": "bun run-bundler.ts"
+  },
+  "dependencies": {
+    "react": "experimental"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "bun-types": "^1.0.1"
+  }
+}
