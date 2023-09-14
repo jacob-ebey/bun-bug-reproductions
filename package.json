@@ -3,5 +3,8 @@
   "name": "bun-bug-reproductions",
   "workspaces": [
     "bugs/*"
-  ]
+  ],
+  "scripts": {
+    "start": "bun scripts/run-all.ts"
+  }
 }
