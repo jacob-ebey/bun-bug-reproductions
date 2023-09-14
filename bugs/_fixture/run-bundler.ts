@@ -31,5 +31,7 @@ try {
   a();
 } catch (error) {
   console.log(error);
+
+  console.log("Quick explanation...");
   process.exit(1);
 }
