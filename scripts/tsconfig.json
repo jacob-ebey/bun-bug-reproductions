@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "target": "ESNext",
+    "allowImportingTsExtensions": true,
+    "types": ["bun-types", "react/experimental"],
+    "jsx": "preserve",
+    "jsxImportSource": "react"
+  }
+}

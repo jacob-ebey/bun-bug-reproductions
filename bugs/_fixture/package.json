@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "bundler-double-exports",
+  "name": "fixture",
   "scripts": {
     "start": "bun run-bundler.ts"
   },

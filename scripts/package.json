@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "scripts",
+  "devDependencies": {
+    "@types/react": "latest",
+    "bun-types": "^1.0.1"
+  }
+}

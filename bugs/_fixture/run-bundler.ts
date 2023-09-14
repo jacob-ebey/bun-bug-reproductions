@@ -9,10 +9,7 @@ await fs.rm(outdir, { recursive: true, force: true });
 
 const result = await Bun.build({
   root,
-  entrypoints: [
-    path.resolve(root, "entry-a.ts"),
-    path.resolve(root, "entry-b.ts"),
-  ],
+  entrypoints: [path.resolve(root, "entry-a.ts")],
   format: "esm",
   sourcemap: "external",
   splitting: true,
@@ -30,9 +27,8 @@ if (!result.success) {
 }
 
 try {
-  const { a, b } = await import("./dist/entry-a.js");
+  const { a } = await import("./dist/entry-a.js");
   a();
-  b();
 } catch (error) {
   console.log(error);
   process.exit(1);
