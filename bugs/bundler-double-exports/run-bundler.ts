@@ -37,8 +37,7 @@ try {
   console.log(error);
 
   console.log(
-    "Check ./bugs/bundler-double-exports/dist/entry-a.js file for the issue."
+    "Double exports seems to arise when one entrypoint is re-exporting from another entrypoint, check ./bugs/bundler-double-exports/dist/entry-b.js for the issue."
   );
-  console.log("It seems to arise when re-exporting from another entrypoint.");
   process.exit(1);
 }
